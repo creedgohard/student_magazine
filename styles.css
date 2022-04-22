@@ -219,6 +219,7 @@ body {
 .main-nav {
     display: grid;
     grid-gap: 2px;
+    overflow: hidden;
 }
 .main-nav ul {
     display: grid;
@@ -252,19 +253,15 @@ body {
 }
 
 /*Scrolling */
-.main-nav.scroll {
-    padding: 10px;
-    background: black;
-    position: fixed;
-  }
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
   
-  .main-nav.scroll span {
-    font-size: 18px;
-    color: white;
-  }
-  
-  .main-nav.scroll li {
-    color: white;
+  .sticky + .content + .content1 {
+    padding-top: 60px;
   }
 
 /*Page content*/
@@ -374,7 +371,7 @@ body {
 .article-content {
     display: grid;
     grid-template-columns: 100%;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 200px 20px 100px;
     color: white;
     font-size: 25px;
 
@@ -400,6 +397,15 @@ body {
     background: white;
 }
 
+.quote {
+    border-style: hidden hidden hidden solid;
+    border-color: green;
+   border-width: 10px;
+   padding: 10px;
+   width: 50em;
+   font-style: italic;
+   opacity: 90%;
+}
 .link {
     text-decoration: none;
 }
