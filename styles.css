@@ -1,4 +1,6 @@
+/*Font imported from google fonts to be used throughout whole page*/
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+/*Background font, width and margins set for whole page*/
 body {
     background: #222;
     font-family: Rajdhani;
@@ -6,18 +8,19 @@ body {
     line-height: 1.4;
     max-width: 100%;
 }
-
+/*Adds a box around the whole page, with width set to make it more responsive*/
 html {
     box-sizing: border-box;
     max-width: 100%;
 }
+/*Grid wrapper around the whole content, for easier placement and cleaner look*/
 .wrapper {
     display: grid;
     grid-gap: 1px;
     margin: 0px;
     max-width: 100%;
 }
-
+/*Square around heading texts, adds dotted border above and below and background colour*/
 .square {
     display: grid;
     border-style: dotted hidden hidden hidden;
@@ -26,7 +29,7 @@ html {
     background:#222;
  
 }
-
+/*Header, header1 and header2, manipulate text within the header, their placements change therefore a different class for each texts */
 .header {
     display: grid;
     grid-gap: 20px;
@@ -54,7 +57,7 @@ html {
 
 
 
-/* Glitch Text */
+/*Animated Glitch Text */
 .glitch {
     font-size: 4rem;
     font-weight: 200;
@@ -69,7 +72,7 @@ html {
         animation: glitch 500ms infinite ;
 
 }
-
+/*Manipulates different colours and positions, these change depending on class*/
 .glitch span {
     position: absolute;
     top: 0;
@@ -88,7 +91,7 @@ html {
     opacity: 0.8;
 } 
 
-
+/*Animation keyframes, colours and positions change depending on percentage*/
 @keyframes glitch {
     0% {
         text-shadow: 
@@ -133,7 +136,7 @@ html {
         -0.025em -0.05em 0 rgba(0, 0, 255, .75);
     }
 }
-/*Logo glitch text*/
+/*Logo glitch text Same as glitch text code used for header but for smaller texts, and different positioning*/
 .logo { 
     background: #222;
     border-style: solid hidden solid hidden;
@@ -207,10 +210,7 @@ html {
     }
 }
 
-
-
-
-
+/*This media query is for those who have reduced motion enabled through windows*/
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
       animation-delay: -1ms !important;
@@ -223,7 +223,7 @@ html {
     }
   }
 
-  /*Navigation*/
+  /*Navigation bar properties Grid used for placement text and padding manipulated*/
 
 .main-nav ul {
     display: grid;
@@ -252,7 +252,7 @@ nav {
     justify-content: space-between;
 
 }
-
+/*Mobile view menu*/ 
 nav .mainMenu {
     list-style: none;
 }
@@ -264,7 +264,6 @@ nav .mainMenu li a {
 
    
 }
-
 
 nav .openMenu {
     font-size: 2rem;
@@ -282,7 +281,7 @@ nav .logo {
     margin: 6px;
     cursor: pointer;
 }
-
+/*Glitch text without animation added for hover, text also lowercased*/
 .main-nav a:hover {
     background: #222;
     text-transform: lowercase;
@@ -293,7 +292,7 @@ nav .logo {
     color: white;
 }
 
-/*Scrolling */
+/*nav bar Scrolling */
 .navbar {
     position: sticky;
     width: 100%;
@@ -467,7 +466,7 @@ footer {
     border-width: 5px;
     border-color: green;
 }
-
+/*Media queries for lower resolutions and mobile view*/
 @media(max-width: 800px) {
     nav .mainMenu {
         height: 100vh;
