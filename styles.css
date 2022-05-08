@@ -2,16 +2,19 @@
 body {
     background: #222;
     font-family: Rajdhani;
-    margin: 30px 50px;
+    margin: 0px 20px;
     line-height: 1.4;
     max-width: 100%;
 }
 
-
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+}
 .wrapper {
     display: grid;
     grid-gap: 1px;
-    margin: 20px 60px 20px;
+    margin: 0px;
     max-width: 100%;
 }
 
@@ -279,39 +282,7 @@ nav .logo {
     margin: 6px;
     cursor: pointer;
 }
-@media(max-width: 800px) {
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        transition:top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li a:hover {
-        background: none;
-        font-size: 1.6rem;
-    }
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
-}
+
 .main-nav a:hover {
     background: #222;
     text-transform: lowercase;
@@ -495,4 +466,55 @@ footer {
     border-style: solid hidden solid hidden;
     border-width: 5px;
     border-color: green;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition:top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    .article h1 {
+        font-size: 3em;
+    }
+    .article img {
+        max-width: 500px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+    .article-content p  ul{
+        padding: 50px;
+  
+    }
+   
+    .article-content img {
+        max-width: 100%;
+        margin: 0px auto;
+    }
 }

@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/f6d81b2d63.js" crossorigin="anonymous"></script>
     <title>Student Magazine - Games event</title>
 </head>
+<!--Usual header not needed for article pages-->
 <body>
-
-<div class="wrapper">
-
-    <div class="navbar">
-        <nav class="main-nav">
+    <!--Whole page is within wrapper-->
+    <div class="wrapper">
+    <!-- Navigation bar-->
+        <div class="navbar">
+            <nav class="main-nav">
+                <!--Logo next to navigation bar-->
+                <h1 class="logo">
+                    The Mind Hive
+            </h1>
+    <!-- Icons used for responsive navigation bar -->
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
             
-            <ul>
+            <ul class="mainMenu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Web.html">Web</a></li>
-                <li><a href="/Games.html">Games</a></li>
-                <li><a href="/Networks.html">Networks</a></li>
-                <li><a href="/Programming.html">Programming</a></li>
-                <li><a href="/Science.html">Science</a></li>
-        
-            </ul>
-            <h1 class="logo">
-                The Mind Hive
-        </h1>
-        </nav>
-        </div>
-
+                <li><a href="../Games.html">Games</a></li>
+                <li><a href="../Networks.html">Networking</a></li>
+                <li><a href="../Programming.html">Programming</a></li>
+                <li><a href="../Science.html">Science</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons"></span>
+                </ul>
+                
+            </nav>
+            </div>
+ <!--Article heading, image and text placements-->
 <section class="article">
     <img src="../img/Games/i-CB9GBKD-XL.jpg">
     <h1 class="">University plays host to world’s largest game creation event</h1>
 </section>
-
+<!--Content text and images-->
 <section class="article-content">
+     <!--Each paragraph in different p tag-->   
     <p>
  Gamers are set to converge on Edge Hill University when it plays host to the world’s largest game creation event.
 
@@ -47,7 +54,7 @@ Around 50 students from across the University will meet at the Tech Hub on Frida
 
 Simultaneously broadcast to venues around the world, the group will then have two days to take the theme and design, develop and create a finished video game, working online alongside professional developers from the global gaming community.
     </p>
-
+    <!--Quote class used for quotes, adds a border bar and italic texts--> 
     <p class="quote">
  Dr Peter Matthew, Computing (Games Programming) Programme Leader, said: “We’re really excited to be one of only two venues in the North West hosting this prestigious event. Typically game development is a long, complicated, process so bringing different people together to share their knowledge and ideas to create a finished game at the end, is a fantastic learning opportunity for our students.
 
@@ -64,12 +71,12 @@ Previous game themes have included ‘extinction’ and ‘ritual’. The finish
      
 </section>
 
-
+<!--Footer-->
 <footer>
     <p>EHU Computing Magazine &copy; 2022 </p>
 </footer>
 
 </div>
-
+<script src="../script.js"></script>
 </body>
 </html>
