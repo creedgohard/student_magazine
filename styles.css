@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 /*Background font, width and margins set for whole page*/
 body {
-    background: #222;
+    background: url(img/bg/circuit\ connection1.png);
     font-family: Rajdhani;
     margin: 0px 20px;
     line-height: 1.4;
@@ -138,7 +138,7 @@ html {
 }
 /*Logo glitch text Same as glitch text code used for header but for smaller texts, and different positioning*/
 .logo { 
-    background: #222;
+    background: #000;
     border-style: solid hidden solid hidden;
     border-color: black;
     border-width: 3px;
@@ -283,7 +283,7 @@ nav .logo {
 }
 /*Glitch text without animation added for hover, text also lowercased*/
 .main-nav a:hover {
-    background: #222;
+    background: #000;
     text-transform: lowercase;
     text-shadow: 
     0.05em 0 0 rgba(255, 0, 0, .75),
@@ -324,6 +324,10 @@ nav .logo {
     border-width: 1px;
     border-color: green;
     max-width: 100%;
+    opacity: 0.9;
+}
+.content:hover {
+    opacity: 1;
 }
 
 .content img {
@@ -332,6 +336,7 @@ nav .logo {
     padding: 10px;
     max-width: 100%;
 }
+
 
  .article-heading {
      color: green;
@@ -350,6 +355,10 @@ nav .logo {
     border-width: 1px;
     border-color: green;
     max-width: 100%;
+    opacity: 0.9;
+}
+.content1:hover {
+    opacity: 1;
 }
 
 .content1 img {
@@ -373,8 +382,8 @@ nav .logo {
 /*Article Page*/
 .article {
     display: grid;
-    grid-template-columns: 50% 50%;
-    min-width: 500px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
     min-height: 400px;
     padding: 10px;
     margin: 10px;
@@ -393,7 +402,7 @@ nav .logo {
 }
 .article img {
     display: grid;
-    grid-column: 1/1;
+    grid-row: 2/2;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -401,10 +410,8 @@ nav .logo {
     
 }
 
-
 .article h1 {
     display: grid;
-    grid-column: 2/2;
     font-size: 6rem;
     margin-bottom: 1em;
     color: white;
